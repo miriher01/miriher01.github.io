@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<div id="container">
+
+  <h1>Discover Your Fortune!</h1>
+
+  <button onclick="tellFortune()">Press to find out your fortune!</button>
+
+
+  <br/><br/>
+
+  <!--This is where the random text will go-->
+  <div id="fortune"></div>
+	<script>
+var fortunes = [
+  // add more array items here if you want, make sure you put a comma between each one. You can use HTML here! Just remember that if it contains quotes, they need to be escaped, like this: \"
+  "Your partner's name will be Lexus, you will have 2 children, and you will live in Veracruz Mexico, and you will work as a Nurse.",
+  "Your partner's name will be Anthony, you will have 5 children, and you will live in Tamaulipas Mexico, and you will work as a Doctor.",
+  "Your partner's name will be Marivel, you will have 6 children, and you will live in Maramoros Mexico, and you will work as a Lawyer.",
+  "Your partner's name will be Eduardo, you will have 3 children, and you will live in New York New york, and you will work as a Assistant.",
+];
+
+function tellFortune() {
+  
+  // generate a random number between 0 and the number of the array items
+  var randomNumber = Math.floor(Math.random() * fortunes.length);
+
+  // print the random number to the console log to make sure it's working
+  console.log("random number: " + randomNumber);
+
+  // take the fortune at the random spot in the array and insert it into the "fortune" div
+ document.getElementById("fortune").innerHTML = fortunes[randomNumber];
+}
+
+function reset() {
+  // what goes here? (hint: make the fortune div contain an empty string)
+  
+}
+</script>
+</head>
+<body>
+	
+</body>
+</html>
