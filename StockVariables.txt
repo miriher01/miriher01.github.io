@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Area Codes</title>
+
+  <script>
+    let boston = 617;
+    let manhattan = 212;
+    let sanFrancisco = 415;
+    let tampa = 813;
+  </script>
+</head>
+
+<body>
+  <script>
+    document.write("Boston: " + boston + "<br>")
+    document.write("Manhattan:  " + manhattan + "<br>")
+    document.write("San francisco: " + sanFrancisco + "<br>")
+    document.write("Tampa: " + tampa + "<br>")
+  </script>
+</body>
+
+</html>
